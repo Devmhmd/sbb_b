@@ -32,7 +32,7 @@ async def amireallyalive(event):
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "₰ [𝙟𝙢𝙩𝙝𝙤𝙣 𝙖𝙧𝙖𝙗𝙞𝙘 𝙪𝙨𝙚𝙧𝙗𝙤𝙩](t.me/jmthon) ₰"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "₰ [꧑ᥲ️ᥱ᥉ƚℛ᥆ ᥴ꧑ძ](t.me/APP_YOUTUBE) ₰"
     sbb_b_IMG = gvarstatus("ALIVE_PIC")
     sbb_b_caption = gvarstatus("ALIVE_TEMPLATE") or temp
     caption = sbb_b_caption.format(
@@ -69,7 +69,7 @@ async def amireallyalive(event):
 temp = """{ALIVE_TEXT}
 **{EMOJI} قاعدۿ البيانات :** `{dbhealth}`
 **{EMOJI} أصـدار التـيليثون :** `{telever}`
-**{EMOJI} أصـدار جـمثون :** `{jmver}`
+**{EMOJI} أصـدار المايسترو :** `{jmver}`
 **{EMOJI} الوقت:** `{uptime}` 
 **{EMOJI} أصدار البـايثون :** `{pyver}`
 **{EMOJI} المسـتخدم:** {mention}"""
