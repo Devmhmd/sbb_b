@@ -30,9 +30,9 @@ except Exception as e:
     sys.exit()
 
 # try:
-# LOGS.info("يتم تفعيل المايسترو")
+# LOGS.info("يتم تفعيل ايجيثون")
 # sbb_b.loop.run_until_complete(love())
-# LOGS.info("تم تفعيل المايسترو")
+# LOGS.info("تم تفعيل ايجيثون")
 # except Exception as meo:
 #  LOGS.error(f"- {meo}")
 
@@ -57,10 +57,10 @@ async def startup_process():
     await load_plugins("plugins")
     await load_plugins("assistant")
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
-    print("تم الان بنجاح اكتمال تنصيب بوت المايسترو !!!")
+    print("تم الان بنجاح اكتمال تنصيب بوت ايجيثون !!!")
     print(
         f"مبروك الان اذهب في التلجرام و ارسل {cmdhr}الاوامر لرؤية اذا كان البوت شغال\
-        \n اذا احتجت مساعده اذهب الى مجموعه https://t.me/G_RO_UP_1"
+        \n اذا احتجت مساعده اذهب الى مجموعه https://t.me/egython_support"
     )
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
     await verifyLoggerGroup()
