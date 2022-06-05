@@ -74,9 +74,9 @@ async def startupmessage():
             Config.SBB_BLOGO = await sbb_b.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://h.top4top.io/p_2346ng8ih1.jpg",
-                caption="❃ عزيزي المستخدم تم تنصيب سورس المايسترو لك بنجاح لمعرفه اوامر السورس؛ \n`.الاوامر`",
+                caption="❃ عزيزي المستخدم تم تنصيب سورس ايجيثون لك بنجاح لمعرفه اوامر السورس؛ \n`.الاوامر`",
                 buttons=[
-                    (Button.url("مجموعة المساعده", "https://t.me/G_RO_UP_1"),)
+                    (Button.url("مجموعة المساعده", "https://t.me/egython_support"),)
                 ],
             )
     except Exception as e:
@@ -115,7 +115,7 @@ async def mybot():
     f"ـ {rz_ment}"
     f"⪼ هذا هو بوت خاص بـ {rz_ment} يمكنك التواصل معه هنا"
     starkbot = await sbb_b.tgbot.get_me()
-    perf = "[ المايسترو ]"
+    perf = "[ ايجيثون ]"
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
     if bot_name.endswith("Assistant"):
@@ -241,7 +241,7 @@ async def verifyLoggerGroup():
         descript = "⪼ هذه هي مجموعه الحفظ الخاصه بك لا تحذفها ابدا  𓆰."
         photobt = await sbb_b.upload_file(file="razan/razan/Jmthonp.jpg")
         _, groupid = await create_supergroup(
-            "كروب بوت المايسترو", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
+            "جروب بوت ايجيثون", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print(
@@ -275,7 +275,7 @@ async def verifyLoggerGroup():
             "مجموعة التخزين", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
-        print("تم عمل الكروب التخزين بنجاح واضافة الفارات اليه.")
+        print("تم عمل الجروب التخزين بنجاح واضافة الفارات اليه.")
         flag = True
     if flag:
         executable = sys.executable.replace(" ", "\\ ")

@@ -158,7 +158,7 @@ def errors_handler(func):
             ftext += result
             pastelink = await paste_message(ftext)
             text = "**هنالك مشكله معينه لديك**\n\n"
-            link = "[هنا](https://t.me/G_RO_UP_1)"
+            link = "[هنا](https://t.me/egython_support)"
             text += "اذا اردت يمكنك التبليغ عن المشكله"
             text += f"- فقط قم بتوجيه الرسالة الى  {link}.\n"
             text += "لم يتم حفظ اي معلومات فقط الخطا وتاريخ الخطأ\n\n"
