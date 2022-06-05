@@ -18,17 +18,17 @@ LOGS = logging.getLogger(__name__)
 
 
 @sbb_b.ar_cmd(
-    pattern="اعادة تشغيل$",
+    pattern="تحديث$",
     disable_errors=True,
 )
 async def _(event):
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#اعادة_التشغيل \n" "تم اعادة تشغيل البوت"
+            BOTLOG_CHATID, "#اعادة_التشغيل \n" "تم تحديث البوت"
         )
     sandy = await edit_or_reply(
         event,
-        "**❃ جارِ اعادة تشغيل السورس\nارسل** `.فحص` **او** `.الاوامر` **للتحقق مما إذ كان البوت شغال ، يستغرق الأمر في الواقع 1-2 دقيقة لإعادة التشغيل**",
+        "**❃ جارِ تحديث السورس\nارسل** `.فحص` **او** `.الاوامر` **للتحقق مما إذ كان البوت شغال ، يستغرق الأمر في الواقع 1-2 دقيقة لإعادة التشغيل**",
     )
     try:
         ulist = get_collectionlist_items()
