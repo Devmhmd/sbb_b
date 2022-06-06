@@ -113,7 +113,7 @@ async def _(event):
         await event.edit(animation_chars[i % 5], link_preview=True)
 
 
-@sbb_b.ar_cmd(pattern="طوبه(?: |$)(.*)"))
+@sbb_b.ar_cmd(pattern="طوبه(?: |$)(.*)")
 async def _(event):
     "أمر الرسوم المتحركة"
     animation_interval = 0.3
@@ -135,7 +135,7 @@ async def _(event):
         await event.edit(animation_chars[i % 10])
 
 
-@sbb_b.ar_cmd(pattern="مربعات(?: |$)(.*)"))
+@sbb_b.ar_cmd(pattern="مربعات(?: |$)(.*)")
 async def _(event):
     "أمر الرسوم المتحركة"
     animation_interval = 0.3
@@ -165,18 +165,18 @@ async def _(event):
         await event.edit(animation_chars[i % 15])
 
 
-@sbb_b.ar_cmd(pattern="حلويات(?: |$)(.*)"))
+@sbb_b.ar_cmd(pattern="حلويات(?: |$)(.*)")
 async def _(event):
     "أمر الرسوم المتحركة"
     event = await edit_or_reply(event, "حلويات")
-    deq = deque(list("🍦🍧🍩🍪🎂🍰🧁🍫🍬🍭"))
+    deq = deque(list("🍦🍧🍩🍪🎂🍰🧁🍫🍬🍭")
     for _ in range(100):
         await asyncio.sleep(0.4)
         await event.edit("".join(deq))
         deq.rotate(1)
 
 
-@sbb_b.ar_cmd(pattern="نار(?: |$)(.*)"))
+@sbb_b.ar_cmd(pattern="نار(?: |$)(.*)")
 async def _(event):
     "أمر الرسوم المتحركة"
     event = await edit_or_reply(event, "جاري اشعال النار")

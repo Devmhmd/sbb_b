@@ -19,7 +19,7 @@ async def _(event):
     RR7PP = get_download_url(R)
     await event.client.send_file(event.chat.id, RR7PP)
     await A.delete()
-    @sbb_b.ar_cmd(pattern="تيك توك(?: |$)(.*)"))
+    @sbb_b.ar_cmd(pattern="تيك توك(?: |$)(.*)")
 async def _(sbb_b):
     reply_message = await sbb_b.get_reply_message()
     if not reply_message:
