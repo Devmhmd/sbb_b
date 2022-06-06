@@ -199,11 +199,11 @@ async def saves():
     except Exception as e:
         print(str(e))
     try:
-        await sbb_b(JoinChannelRequest("@jmthon"))
+        await sbb_b(JoinChannelRequest("@egython_vr"))
     except BaseException:
         pass
     try:
-        await sbb_b(JoinChannelRequest("@RR7PP"))
+        await sbb_b(JoinChannelRequest("@egython_support"))
     except BaseException:
         pass
 
