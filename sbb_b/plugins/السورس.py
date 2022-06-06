@@ -4,7 +4,7 @@ from sbb_b import sbb_b
 from . import *
 from ..Config import Config
 
-ROZ_PIC = "https://h.top4top.io/p_2346ng8ih1.jpg"
+ROZ_PIC = "https://telegra.ph/file/9f2260c88c3e86b425776.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
     f"**⌯︙بوت ايجيثون يعمل بنجاح 🤍،**\n"
@@ -23,7 +23,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         result = None
         query = event.text
         await bot.get_me()
-        if query.startswith("السورس$") and event.query.user_id == bot.uid:
+        if query.startswith("السورس(?: |$)(.*)") and event.query.user_id == bot.uid:
             buttons = [
                 [
                     Button.url("قنـاة السـورس ⚙️", "https://t.me/egython_vr"),
@@ -52,12 +52,12 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             await event.answer([result] if result else None)
 
 
-@sbb_b.ar_cmd(pattern="السورس$")
+@sbb_b.ar_cmd(pattern="السورس(?: |$)(.*)")
 async def repo(event):
     RR7PP = Config.TG_BOT_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await bot.inline_query(RR7PP, "السورس$")
+    response = await bot.inline_query(RR7PP, "السورس(?: |$)(.*)")
     await response[0].click(event.chat_id)
     await event.delete()
 

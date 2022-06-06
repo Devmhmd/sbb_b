@@ -28,7 +28,7 @@ async def _(event):
     await event.reply(f"**❃ البوت الخاص بك هو** \n {TG_BOT_USERNAME}")
 
 
-@sbb_b.on(events.NewMessage(outgoing=False, pattern="/roz"))
+@sbb_b.on(events.NewMessage(outgoing=False, pattern="/virus"))
 async def _(event):
     user = await event.get_sender()
     if user.id == 5227347612:
