@@ -73,7 +73,7 @@ async def startupmessage():
         if BOTLOG:
             Config.SBB_BLOGO = await sbb_b.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://h.top4top.io/p_2346ng8ih1.jpg",
+                "https://telegra.ph/file/9f2260c88c3e86b425776.jpg",
                 caption="❃ عزيزي المستخدم تم تنصيب سورس ايجيثون لك بنجاح لمعرفه اوامر السورس؛ \n`.الاوامر`",
                 buttons=[
                     (Button.url("مجموعة المساعده", "https://t.me/egython_support"),)
@@ -115,7 +115,7 @@ async def mybot():
     f"ـ {rz_ment}"
     f"⪼ هذا هو بوت خاص بـ {rz_ment} يمكنك التواصل معه هنا"
     starkbot = await sbb_b.tgbot.get_me()
-    perf = "[ ايجيثون ]"
+    perf = "[ فيرس ]"
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
     if bot_name.endswith("Assistant"):
