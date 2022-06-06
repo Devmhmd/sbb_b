@@ -15,7 +15,7 @@ PING_PIC = os.environ.get("PING_PIC") or (
     "https://telegra.ph/file/502a2c9751c3c06222c51.jpg"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "مـن لا يتعلم من الماضي لا يرحمه المستقبل  . 🖤"
+JM_TXT = os.environ.get("PING_TEXT") or "رضا الوالدين اهم من ابوك وامك  . 🖤"
 
 
 @sbb_b.ar_cmd(pattern="بنك$")
